@@ -25,7 +25,7 @@ public class User {
 		
 	}
 
-	public User(long id, String name, String email, String phone, String passaword) {
+	public User(Long id, String name, String email, String phone, String passaword) {
 		super();
 		this.id = id;
 		this.name = name;
