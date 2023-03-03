@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -25,6 +27,7 @@ public class User {
 	private String passaword;
 	
 	//associação, um usurario tem varios pedidos, com chave estrangeira, relação n-1
+	@JsonIgnore //evita repetição ao fazer consultas no postman
 	@OneToMany(mappedBy="client")
 	private List<Order> orders= new ArrayList<>();
 	
