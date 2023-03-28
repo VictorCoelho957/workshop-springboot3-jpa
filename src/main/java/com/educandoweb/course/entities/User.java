@@ -29,7 +29,7 @@ public class User implements Serializable {
 	private String  name;
 	private String email;
 	private String phone;
-	private String passaword;
+	private String password;
 	
 	//associação, um usurario tem varios pedidos, com chave estrangeira, relação n-1
 	@JsonIgnore //evita repetição ao fazer consultas no postman
@@ -40,13 +40,13 @@ public class User implements Serializable {
 		
 	}
 
-	public User(Long id, String name, String email, String phone, String passaword) {
+	public User(Long id, String name, String email, String phone, String password) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
-		this.passaword = passaword;
+		this.password = password;
 	}
 
 	public long getId() {
@@ -82,11 +82,11 @@ public class User implements Serializable {
 	}
 
 	public String getPassaword() {
-		return passaword;
+		return password;
 	}
 
-	public void setPassaword(String passaword) {
-		this.passaword = passaword;
+	public void setPassaword(String password) {
+		this.password = password;
 	}
 	
 	public List<Order> getOrders() {
