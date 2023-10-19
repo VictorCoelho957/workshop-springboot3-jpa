@@ -4,7 +4,7 @@
 # Sobre o projeto
 
 
-Workshop-springboot3-jpa é uma aplicação back end construída durante o curso de Java programação Orientado a Objetos+ Prpjetos.
+Workshop-springboot3-jpa é uma aplicação back end construída durante o curso de Java programação Orientado a Objetos+ Projetos.
 
 A aplicação consiste em uma pesquisa crud utilizando somente back end, onde os dados são armazenados no banco de dados Mysql e utilização da ferramenta Postaman para realizar chamadas na Api
 
